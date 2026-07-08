@@ -55,25 +55,15 @@
     }
 
     .logo {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      font-size: 1.1rem;
-      font-weight: 800;
-      color: #191923;
-    }
-
-    .logo-mark {
-      width: 34px;
-      height: 34px;
-      border-radius: 10px;
-      background: linear-gradient(135deg, #ff4f8b, #ff7a30);
       display: inline-flex;
       align-items: center;
-      justify-content: center;
-      color: #ffffff;
-      font-weight: 900;
-      font-size: 0.95rem;
+      line-height: 1;
+    }
+
+    .logo-image {
+      width: 150px;
+      height: auto;
+      object-fit: contain;
     }
 
     .nav-link {
@@ -337,6 +327,10 @@
         display: none;
       }
 
+      .logo-image {
+        width: 132px;
+      }
+
       .hero-copy h1 {
         font-size: clamp(2.55rem, 14vw, 4rem);
       }
@@ -386,8 +380,11 @@
   <section class="hero-section">
     <nav class="hero-nav">
       <a href="#" class="logo" aria-label="FlowCRM">
-        <span class="logo-mark">F</span>
-        <span>FlowCRM</span>
+        <img
+          class="logo-image"
+          src="https://res.cloudinary.com/wk2nvqhl/image/upload/f_auto,q_auto/logo_oficial_k6kpzn"
+          alt="FlowCRM"
+        >
       </a>
 
       <a href="#calculator" class="nav-link">Acessar calculadora</a>
@@ -421,7 +418,7 @@
 
       <div class="hero-visual">
         <div class="mockup-frame">
-          <img src="assets/mockup-flowcrm.png" alt="Mockup da calculadora de ROI da FlowCRM">
+          <img src="https://res.cloudinary.com/wk2nvqhl/image/upload/v1783472860/Mockup_de_painel_de_marketing_FlowCRM_nouecr.png" alt="Mockup da calculadora de ROI da FlowCRM">
         </div>
       </div>
     </div>
