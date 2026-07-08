@@ -37,180 +37,256 @@
 
     .hero-section {
       width: 100%;
-      min-height: 100vh;
-      padding: 32px 24px 96px;
+      min-height: 100svh;
+      padding: 28px 24px 108px;
       background:
-        radial-gradient(circle at top right, rgba(255, 79, 139, 0.16), transparent 34%),
-        radial-gradient(circle at 80% 65%, rgba(255, 122, 48, 0.14), transparent 32%),
-        linear-gradient(180deg, #fff7f3 0%, #ffffff 100%);
+        radial-gradient(circle at 96% 6%, rgba(255, 79, 139, 0.18), transparent 32%),
+        radial-gradient(circle at 82% 72%, rgba(255, 122, 48, 0.14), transparent 35%),
+        radial-gradient(circle at 8% 22%, rgba(255, 79, 139, 0.07), transparent 28%),
+        linear-gradient(180deg, #fff8f4 0%, #ffffff 100%);
       overflow: hidden;
     }
 
     .hero-nav {
       max-width: 1180px;
-      margin: 0 auto 72px;
+      margin: 0 auto clamp(56px, 7vw, 88px);
       display: flex;
       align-items: center;
       justify-content: space-between;
+      gap: 24px;
     }
 
     .logo {
       display: inline-flex;
       align-items: center;
       line-height: 1;
+      transition: transform 0.22s ease, opacity 0.22s ease;
+    }
+
+    .logo:hover {
+      transform: translateY(-1px);
+      opacity: 0.9;
     }
 
     .logo-image {
-      width: 150px;
+      width: 156px;
       height: auto;
       object-fit: contain;
     }
 
-    .nav-link {
-      font-size: 0.95rem;
-      font-weight: 700;
-      color: #ff4f8b;
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      border: 0;
+      border-radius: 999px;
+      background: linear-gradient(135deg, #ff4f8b 0%, #ff7a30 100%);
+      color: #ffffff;
+      font-size: 1rem;
+      font-weight: 800;
+      line-height: 1;
+      letter-spacing: -0.01em;
+      box-shadow: 0 18px 36px rgba(255, 79, 139, 0.24);
+      cursor: pointer;
+      transition:
+        transform 0.22s ease,
+        box-shadow 0.22s ease,
+        filter 0.22s ease;
+    }
+
+    .button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 24px 48px rgba(255, 79, 139, 0.34);
+      filter: saturate(1.04);
+    }
+
+    .button:focus-visible {
+      outline: 3px solid rgba(255, 79, 139, 0.26);
+      outline-offset: 4px;
+    }
+
+    .button svg {
+      width: 18px;
+      height: 18px;
+      flex: 0 0 auto;
+      transition: transform 0.22s ease;
+    }
+
+    .button:hover svg {
+      transform: translateX(3px);
+    }
+
+    .nav-button {
+      min-height: 46px;
+      padding: 14px 22px;
+      font-size: 0.92rem;
+      box-shadow: 0 14px 30px rgba(255, 79, 139, 0.22);
+    }
+
+    .primary-button {
+      min-height: 56px;
+      padding: 19px 30px;
     }
 
     .hero-container {
       max-width: 1180px;
       margin: 0 auto;
       display: grid;
-      grid-template-columns: 0.95fr 1.05fr;
-      gap: 64px;
+      grid-template-columns: minmax(0, 1.08fr) minmax(360px, 0.92fr);
+      gap: clamp(44px, 6vw, 68px);
       align-items: center;
     }
 
     .hero-copy {
-      max-width: 620px;
-    }
-
-    .hero-badge {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      padding: 10px 16px;
-      margin-bottom: 24px;
-      border-radius: 999px;
-      background: #ffffff;
-      box-shadow: 0 12px 30px rgba(25, 25, 35, 0.08);
-      color: #ff4f8b;
-      font-size: 0.82rem;
-      font-weight: 800;
-      letter-spacing: 0.06em;
-      text-transform: uppercase;
+      max-width: 650px;
     }
 
     .hero-copy h1 {
       margin: 0;
-      font-size: clamp(2.8rem, 6vw, 5.4rem);
-      line-height: 0.95;
-      letter-spacing: -0.07em;
+      max-width: 660px;
+      font-size: clamp(3rem, 6vw, 5.55rem);
+      line-height: 0.96;
+      letter-spacing: -0.075em;
       color: #191923;
     }
 
     .hero-copy p {
-      margin: 28px 0 0;
-      max-width: 560px;
-      font-size: 1.16rem;
-      line-height: 1.7;
+      margin: 24px 0 0;
+      max-width: 570px;
+      font-size: clamp(1.04rem, 1.7vw, 1.18rem);
+      line-height: 1.72;
       color: #4b4b5c;
     }
 
     .hero-actions {
-      margin-top: 36px;
+      margin-top: 32px;
       display: flex;
       flex-direction: column;
       align-items: flex-start;
-      gap: 12px;
-    }
-
-    .primary-button {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      padding: 17px 28px;
-      border-radius: 999px;
-      background: linear-gradient(135deg, #ff4f8b, #ff7a30);
-      color: #ffffff;
-      font-size: 1rem;
-      font-weight: 800;
-      box-shadow: 0 18px 36px rgba(255, 79, 139, 0.28);
-      transition: transform 0.2s ease, box-shadow 0.2s ease;
-    }
-
-    .primary-button:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 22px 42px rgba(255, 79, 139, 0.34);
+      gap: 16px;
     }
 
     .hero-microcopy {
-      font-size: 0.92rem;
-      color: #6b6b7a;
+      display: inline-flex;
+      align-items: flex-start;
+      gap: 10px;
+      max-width: 450px;
+      padding: 12px 16px;
+      border: 1px solid rgba(255, 79, 139, 0.13);
+      border-radius: 18px;
+      background: rgba(255, 255, 255, 0.7);
+      box-shadow: 0 10px 24px rgba(25, 25, 35, 0.06);
+      font-size: 0.9rem;
+      line-height: 1.45;
+      font-weight: 650;
+      color: #5d5d6e;
+    }
+
+    .hero-microcopy::before {
+      content: "";
+      flex: 0 0 auto;
+      width: 18px;
+      height: 18px;
+      margin-top: 1px;
+      border-radius: 50%;
+      background:
+        radial-gradient(circle at center, #ff4f8b 0 2px, transparent 2.5px),
+        linear-gradient(135deg, rgba(255, 79, 139, 0.16), rgba(255, 122, 48, 0.14));
+      box-shadow: inset 0 0 0 1px rgba(255, 79, 139, 0.18);
     }
 
     .hero-bullets {
-      margin: 32px 0 0;
+      margin: 34px 0 0;
       padding: 0;
       list-style: none;
       display: grid;
-      gap: 13px;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 14px 18px;
       color: #30303d;
-      font-size: 0.98rem;
-      font-weight: 600;
+      font-size: 0.96rem;
+      font-weight: 700;
     }
 
     .hero-bullets li {
       display: flex;
       align-items: flex-start;
-      gap: 10px;
+      gap: 12px;
+      min-height: 56px;
+      padding: 14px 15px;
+      border: 1px solid rgba(255, 79, 139, 0.11);
+      border-radius: 18px;
+      background: rgba(255, 255, 255, 0.72);
+      box-shadow: 0 14px 32px rgba(25, 25, 35, 0.055);
+      backdrop-filter: blur(12px);
     }
 
-    .hero-bullets li::before {
-      content: "✓";
+    .bullet-icon {
       flex: 0 0 auto;
-      width: 22px;
-      height: 22px;
+      width: 28px;
+      height: 28px;
       border-radius: 50%;
-      background: #fff1f6;
-      color: #ff4f8b;
       display: inline-flex;
       align-items: center;
       justify-content: center;
-      font-size: 0.8rem;
-      font-weight: 900;
+      background: linear-gradient(135deg, rgba(255, 79, 139, 0.13), rgba(255, 122, 48, 0.13));
+      color: #ff4f8b;
+    }
+
+    .bullet-icon svg {
+      width: 17px;
+      height: 17px;
+      stroke: currentColor;
     }
 
     .hero-visual {
       position: relative;
+      width: 100%;
+      max-width: 500px;
+      justify-self: end;
     }
 
     .hero-visual::before {
       content: "";
       position: absolute;
-      inset: 8% 0 auto 8%;
-      width: 86%;
-      height: 86%;
-      border-radius: 44px;
-      background: linear-gradient(135deg, rgba(255, 79, 139, 0.18), rgba(255, 122, 48, 0.14));
-      filter: blur(10px);
+      inset: 8% 2% auto 10%;
+      width: 82%;
+      height: 84%;
+      border-radius: 40px;
+      background: linear-gradient(135deg, rgba(255, 79, 139, 0.16), rgba(255, 122, 48, 0.12));
+      filter: blur(14px);
+      z-index: 0;
+    }
+
+    .hero-visual::after {
+      content: "";
+      position: absolute;
+      right: -22px;
+      bottom: -28px;
+      width: 112px;
+      height: 112px;
+      border-radius: 34px;
+      background: rgba(255, 255, 255, 0.46);
+      box-shadow: inset 0 0 0 1px rgba(255, 79, 139, 0.07);
+      transform: rotate(12deg);
       z-index: 0;
     }
 
     .mockup-frame {
       position: relative;
       z-index: 1;
-      padding: 14px;
-      border-radius: 34px;
-      background: rgba(255, 255, 255, 0.72);
-      box-shadow: 0 28px 70px rgba(25, 25, 35, 0.16);
+      padding: 12px;
+      border: 1px solid rgba(255, 255, 255, 0.75);
+      border-radius: 30px;
+      background: rgba(255, 255, 255, 0.78);
+      box-shadow: 0 24px 56px rgba(25, 25, 35, 0.14);
       backdrop-filter: blur(18px);
     }
 
     .mockup-frame img {
       width: 100%;
-      border-radius: 24px;
-      box-shadow: 0 20px 50px rgba(25, 25, 35, 0.10);
+      border-radius: 22px;
+      box-shadow: 0 16px 38px rgba(25, 25, 35, 0.09);
     }
 
     /* =========================
@@ -274,33 +350,31 @@
     @media (max-width: 980px) {
       .hero-section {
         min-height: auto;
-        padding-bottom: 72px;
+        padding-bottom: 78px;
       }
 
       .hero-nav {
-        margin-bottom: 52px;
+        margin-bottom: 56px;
       }
 
       .hero-container {
         grid-template-columns: 1fr;
-        gap: 56px;
+        gap: 58px;
       }
 
       .hero-copy {
         max-width: 760px;
       }
 
-      .hero-copy h1 {
-        max-width: 760px;
-      }
-
+      .hero-copy h1,
       .hero-copy p {
-        max-width: 680px;
+        max-width: 720px;
       }
 
       .hero-visual {
-        max-width: 760px;
+        max-width: 620px;
         margin: 0 auto;
+        justify-self: center;
       }
 
       .context-container {
@@ -314,39 +388,69 @@
       }
     }
 
+    @media (max-width: 720px) {
+      .hero-bullets {
+        grid-template-columns: 1fr;
+      }
+    }
+
     @media (max-width: 640px) {
       .hero-section {
-        padding: 24px 20px 64px;
+        padding: 22px 20px 66px;
       }
 
       .hero-nav {
         margin-bottom: 48px;
-      }
-
-      .nav-link {
-        display: none;
+        gap: 16px;
       }
 
       .logo-image {
-        width: 132px;
+        width: 128px;
+      }
+
+      .nav-button {
+        min-height: 42px;
+        padding: 12px 16px;
+        font-size: 0.84rem;
+        white-space: nowrap;
+      }
+
+      .nav-button svg {
+        display: none;
       }
 
       .hero-copy h1 {
         font-size: clamp(2.55rem, 14vw, 4rem);
+        letter-spacing: -0.065em;
       }
 
       .hero-copy p {
+        margin-top: 22px;
         font-size: 1.03rem;
         line-height: 1.65;
       }
 
-      .primary-button {
-        width: 100%;
-        padding: 16px 22px;
-      }
-
       .hero-actions {
         width: 100%;
+        margin-top: 28px;
+      }
+
+      .primary-button {
+        width: 100%;
+        min-height: 54px;
+        padding: 17px 22px;
+      }
+
+      .hero-bullets {
+        margin-top: 30px;
+      }
+
+      .hero-bullets li {
+        min-height: auto;
+      }
+
+      .hero-visual::after {
+        display: none;
       }
 
       .mockup-frame {
@@ -372,6 +476,17 @@
         line-height: 1.7;
       }
     }
+
+    @media (max-width: 430px) {
+      .hero-nav {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+
+      .nav-button {
+        width: 100%;
+      }
+    }
   </style>
 </head>
 
@@ -387,13 +502,16 @@
         >
       </a>
 
-      <a href="#calculator" class="nav-link">Acessar calculadora</a>
+      <a href="#calculator" class="button nav-button">
+        Acessar calculadora
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M5 12h14m-6-6 6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>
     </nav>
 
     <div class="hero-container">
       <div class="hero-copy">
-        <span class="hero-badge">Calculadora gratuita</span>
-
         <h1>Calcule o ROI da automação de marketing em menos de 2 minutos</h1>
 
         <p>
@@ -402,17 +520,59 @@
         </p>
 
         <div class="hero-actions">
-          <a href="#calculator" class="primary-button">Ver minha estimativa de economia</a>
+          <a href="#calculator" class="button primary-button">
+            Ver minha estimativa de economia
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M5 12h14m-6-6 6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
           <span class="hero-microcopy">
-            Calculadora gratuita. Resultado estimado com base na rotina atual da sua equipe.
+            Resultado estimado com base na rotina atual da sua equipe.
           </span>
         </div>
 
         <ul class="hero-bullets">
-          <li>Estime ganhos de produtividade</li>
-          <li>Identifique tarefas que podem ser automatizadas</li>
-          <li>Visualize economia de tempo e recursos</li>
-          <li>Receba recomendações para otimizar sua operação</li>
+          <li>
+            <span class="bullet-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none">
+                <path d="M4 19V5m0 14h16M8 16v-5m4 5V8m4 8v-3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </span>
+            <span>Estime ganhos de produtividade</span>
+          </li>
+          <li>
+            <span class="bullet-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none">
+                <rect x="5" y="4.5" width="14" height="15" rx="2.5" stroke-width="2"/>
+                <path d="M9 9h6" stroke-width="2" stroke-linecap="round"/>
+                <path d="M9 13h6" stroke-width="2" stroke-linecap="round"/>
+                <path d="M9 17h4" stroke-width="2" stroke-linecap="round"/>
+                <circle cx="7.2" cy="9" r="0.9" fill="currentColor" stroke="none"/>
+                <circle cx="7.2" cy="13" r="0.9" fill="currentColor" stroke="none"/>
+                <circle cx="7.2" cy="17" r="0.9" fill="currentColor" stroke="none"/>
+              </svg>
+            </span>
+            <span>Identifique tarefas que podem ser automatizadas</span>
+          </li>
+          <li>
+            <span class="bullet-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none">
+                <circle cx="12" cy="12" r="8.2" stroke-width="2"/>
+                <path d="M12 7.2v9.6" stroke-width="2" stroke-linecap="round"/>
+                <path d="M15.1 9.1h-4.2a1.9 1.9 0 0 0 0 3.8h2.2a1.9 1.9 0 0 1 0 3.8H8.8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </span>
+            <span>Visualize economia de tempo e recursos</span>
+          </li>
+          <li>
+            <span class="bullet-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none">
+                <path d="M12 3 4 7v6c0 5 3.5 7.5 8 8 4.5-.5 8-3 8-8V7l-8-4Z" stroke-width="2" stroke-linejoin="round"/>
+                <path d="m9 12 2 2 4-5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </span>
+            <span>Receba recomendações para otimizar sua operação</span>
+          </li>
         </ul>
       </div>
 
