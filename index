@@ -2334,3 +2334,1770 @@
 }
 
 </style>
+
+<!-- ==========================================
+     FORMULÁRIO / CONVERSÃO
+=========================================== -->
+
+<section class="form-section" id="formulario">
+
+  <div class="form-glow form-glow-1" aria-hidden="true"></div>
+  <div class="form-glow form-glow-2" aria-hidden="true"></div>
+
+  <div class="form-container">
+
+
+    <!-- ==========================================
+         COPY
+    =========================================== -->
+
+    <div class="form-copy reveal">
+
+      <div class="form-heading-top">
+
+        <span class="form-section-index" aria-hidden="true">
+          04
+        </span>
+
+        <span class="form-kicker">
+          <span class="form-kicker-dot"></span>
+          Sua estimativa
+        </span>
+
+      </div>
+
+
+      <h2>
+        Receba sua
+        <span class="form-title-accent">
+          estimativa gratuita
+        </span>
+      </h2>
+
+
+      <p class="form-description">
+        Preencha o formulário para acessar a calculadora e
+        visualizar o potencial de economia da sua operação
+        de marketing.
+      </p>
+
+
+      <div class="form-meta">
+
+        <div class="form-meta-item">
+          <span class="form-meta-icon">
+            <svg viewBox="0 0 24 24" fill="none">
+              <circle
+                cx="12"
+                cy="12"
+                r="8"
+                stroke="currentColor"
+                stroke-width="1.8"
+              />
+              <path
+                d="M12 8v4l2.5 1.5"
+                stroke="currentColor"
+                stroke-width="1.8"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </span>
+
+          <div>
+            <strong>Menos de 2 minutos</strong>
+            <span>para preencher</span>
+          </div>
+        </div>
+
+
+        <div class="form-meta-item">
+          <span class="form-meta-icon">
+            <svg viewBox="0 0 24 24" fill="none">
+              <path
+                d="M12 3 5 6.5V12c0 4.5 2.8 7.2 7 8 4.2-.8 7-3.5 7-8V6.5L12 3Z"
+                stroke="currentColor"
+                stroke-width="1.8"
+                stroke-linejoin="round"
+              />
+              <path
+                d="m9.5 12 1.7 1.7 3.5-4"
+                stroke="currentColor"
+                stroke-width="1.8"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </span>
+
+          <div>
+            <strong>Resultado personalizado</strong>
+            <span>com base na sua rotina</span>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+
+
+    <!-- ==========================================
+         FORM
+    =========================================== -->
+
+    <div class="form-card reveal delay-1">
+
+      <div class="form-card-header">
+
+        <span class="form-card-eyebrow">
+          Marketing Automation ROI Calculator
+        </span>
+
+        <h3>
+          Conte um pouco sobre sua operação
+        </h3>
+
+        <p>
+          Essas informações serão usadas para gerar
+          uma estimativa mais próxima da sua realidade.
+        </p>
+
+      </div>
+
+
+      <form class="lead-form">
+
+
+        <!-- NOME -->
+
+        <div class="form-field">
+
+          <label for="nome">
+            Nome
+          </label>
+
+          <input
+            type="text"
+            id="nome"
+            name="nome"
+            placeholder="Seu nome"
+            autocomplete="name"
+            required
+          >
+
+        </div>
+
+
+
+        <!-- EMAIL -->
+
+        <div class="form-field">
+
+          <label for="email">
+            Email corporativo
+          </label>
+
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="voce@empresa.com"
+            autocomplete="email"
+            required
+          >
+
+        </div>
+
+
+
+        <!-- EMPRESA -->
+
+        <div class="form-field">
+
+          <label for="empresa">
+            Empresa
+          </label>
+
+          <input
+            type="text"
+            id="empresa"
+            name="empresa"
+            placeholder="Nome da empresa"
+            autocomplete="organization"
+            required
+          >
+
+        </div>
+
+
+
+        <!-- CARGO -->
+
+        <div class="form-field">
+
+          <label for="cargo">
+            Cargo
+          </label>
+
+          <div class="select-wrap">
+
+            <select
+              id="cargo"
+              name="cargo"
+              required
+            >
+
+              <option value="" selected disabled>
+                Selecione seu cargo
+              </option>
+
+              <option value="cmo">
+                CMO / Diretor(a) de Marketing
+              </option>
+
+              <option value="head-marketing">
+                Head de Marketing
+              </option>
+
+              <option value="marketing-manager">
+                Marketing Manager / Gerente de Marketing
+              </option>
+
+              <option value="marketing-ops">
+                Marketing Operations Manager
+              </option>
+
+              <option value="crm-manager">
+                CRM Manager
+              </option>
+
+              <option value="growth-manager">
+                Growth Marketing Manager
+              </option>
+
+              <option value="demand-generation">
+                Demand Generation Manager
+              </option>
+
+              <option value="automation-specialist">
+                Especialista em Automação de Marketing
+              </option>
+
+              <option value="crm-specialist">
+                Especialista em CRM
+              </option>
+
+              <option value="marketing-analyst">
+                Analista de Marketing
+              </option>
+
+              <option value="founder">
+                Founder / Sócio(a)
+              </option>
+
+              <option value="other">
+                Outro
+              </option>
+
+            </select>
+
+            <span class="select-icon" aria-hidden="true">
+
+              <svg viewBox="0 0 24 24" fill="none">
+                <path
+                  d="m7 10 5 5 5-5"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+
+            </span>
+
+          </div>
+
+        </div>
+
+
+
+        <!-- TAMANHO DA EQUIPE -->
+
+        <fieldset class="form-group">
+
+          <legend>
+            Tamanho da equipe de marketing
+          </legend>
+
+          <div class="choice-grid choice-grid-3">
+
+            <label class="choice-card">
+
+              <input
+                type="radio"
+                name="team-size"
+                value="menos-10"
+                required
+              >
+
+              <span class="choice-radio"></span>
+
+              <span class="choice-copy">
+                Menos de 10
+              </span>
+
+            </label>
+
+
+            <label class="choice-card">
+
+              <input
+                type="radio"
+                name="team-size"
+                value="10-20"
+              >
+
+              <span class="choice-radio"></span>
+
+              <span class="choice-copy">
+                Entre 10 e 20
+              </span>
+
+            </label>
+
+
+            <label class="choice-card">
+
+              <input
+                type="radio"
+                name="team-size"
+                value="mais-20"
+              >
+
+              <span class="choice-radio"></span>
+
+              <span class="choice-copy">
+                Mais de 20
+              </span>
+
+            </label>
+
+          </div>
+
+        </fieldset>
+
+
+
+        <!-- DESAFIO -->
+
+        <fieldset class="form-group challenge-options">
+
+          <legend>
+            Principal desafio atual
+          </legend>
+
+          <div class="choice-list">
+
+            <label class="choice-row">
+
+              <input
+                type="radio"
+                name="challenge"
+                value="tarefas-manuais"
+                required
+              >
+
+              <span class="choice-radio"></span>
+
+              <span class="choice-copy">
+                Muitas tarefas manuais
+              </span>
+
+            </label>
+
+
+            <label class="choice-row">
+
+              <input
+                type="radio"
+                name="challenge"
+                value="visibilidade"
+              >
+
+              <span class="choice-radio"></span>
+
+              <span class="choice-copy">
+                Falta de visibilidade sobre resultados
+              </span>
+
+            </label>
+
+
+            <label class="choice-row">
+
+              <input
+                type="radio"
+                name="challenge"
+                value="produtividade"
+              >
+
+              <span class="choice-radio"></span>
+
+              <span class="choice-copy">
+                Baixa produtividade da equipe
+              </span>
+
+            </label>
+
+
+            <label class="choice-row">
+
+              <input
+                type="radio"
+                name="challenge"
+                value="campanhas"
+              >
+
+              <span class="choice-radio"></span>
+
+              <span class="choice-copy">
+                Dificuldade em organizar campanhas
+              </span>
+
+            </label>
+
+
+            <label class="choice-row">
+
+              <input
+                type="radio"
+                name="challenge"
+                value="integracao"
+              >
+
+              <span class="choice-radio"></span>
+
+              <span class="choice-copy">
+                Pouca integração entre ferramentas
+              </span>
+
+            </label>
+
+          </div>
+
+        </fieldset>
+
+
+
+        <!-- CTA -->
+
+        <button
+          type="submit"
+          class="form-submit"
+        >
+
+          <span>
+            Gerar minha estimativa
+          </span>
+
+          <svg
+            viewBox="0 0 24 24"
+            fill="none"
+            aria-hidden="true"
+          >
+            <path
+              d="M5 12h14m-6-6 6 6-6 6"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+
+        </button>
+
+
+
+        <!-- MICROCOPY -->
+
+        <p class="form-privacy">
+
+          <svg
+            viewBox="0 0 24 24"
+            fill="none"
+            aria-hidden="true"
+          >
+            <rect
+              x="6"
+              y="10"
+              width="12"
+              height="9"
+              rx="2"
+              stroke="currentColor"
+              stroke-width="1.7"
+            />
+
+            <path
+              d="M9 10V8a3 3 0 0 1 6 0v2"
+              stroke="currentColor"
+              stroke-width="1.7"
+              stroke-linecap="round"
+            />
+          </svg>
+
+          <span>
+            Ao enviar, você concorda em receber comunicações
+            da FlowCRM sobre automação de marketing e CRM.
+            Você pode cancelar a inscrição a qualquer momento.
+          </span>
+
+        </p>
+
+
+      </form>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<style>
+
+/* ==================================================
+   FORM SECTION
+================================================== */
+
+.form-section {
+  position: relative;
+
+  padding:
+    clamp(82px, 9vw, 118px)
+    24px
+    clamp(88px, 10vw, 126px);
+
+  background:
+    radial-gradient(
+      circle at 14% 18%,
+      rgba(255,79,139,.2),
+      transparent 27%
+    ),
+    radial-gradient(
+      circle at 88% 82%,
+      rgba(255,122,48,.14),
+      transparent 29%
+    ),
+    linear-gradient(
+      145deg,
+      #19191f 0%,
+      #101015 55%,
+      #17171d 100%
+    );
+
+  overflow: hidden;
+}
+
+
+/* ==================================================
+   BACKGROUND GLOWS
+================================================== */
+
+.form-glow {
+  position: absolute;
+
+  border-radius: 50%;
+
+  pointer-events: none;
+
+  filter: blur(8px);
+}
+
+
+.form-glow-1 {
+  width: 520px;
+  height: 520px;
+
+  top: -300px;
+  right: 12%;
+
+  background:
+    radial-gradient(
+      circle,
+      rgba(255,79,139,.16),
+      transparent 68%
+    );
+
+  animation:
+    formGlowOne
+    9s
+    ease-in-out
+    infinite alternate;
+}
+
+
+.form-glow-2 {
+  width: 460px;
+  height: 460px;
+
+  left: -260px;
+  bottom: -230px;
+
+  background:
+    radial-gradient(
+      circle,
+      rgba(255,122,48,.1),
+      transparent 70%
+    );
+
+  animation:
+    formGlowTwo
+    11s
+    ease-in-out
+    infinite alternate;
+}
+
+
+@keyframes formGlowOne {
+
+  to {
+    transform:
+      translate(
+        -50px,
+        55px
+      )
+      scale(1.08);
+  }
+
+}
+
+
+@keyframes formGlowTwo {
+
+  to {
+    transform:
+      translate(
+        45px,
+        -30px
+      )
+      scale(1.1);
+  }
+
+}
+
+
+/* ==================================================
+   CONTAINER
+================================================== */
+
+.form-container {
+  position: relative;
+
+  z-index: 2;
+
+  max-width: 1180px;
+
+  margin: 0 auto;
+
+  display: grid;
+
+  grid-template-columns:
+    minmax(0, .82fr)
+    minmax(520px, 1.18fr);
+
+  gap:
+    clamp(
+      70px,
+      9vw,
+      118px
+    );
+
+  align-items: start;
+}
+
+
+/* ==================================================
+   LEFT COPY
+================================================== */
+
+.form-copy {
+  position: sticky;
+
+  top: 110px;
+
+  padding-top: 24px;
+}
+
+
+/* ==================================================
+   HEADING TOP
+================================================== */
+
+.form-heading-top {
+  position: relative;
+
+  min-height: 64px;
+
+  margin-bottom: 22px;
+
+  display: flex;
+
+  align-items: center;
+}
+
+
+.form-section-index {
+  position: absolute;
+
+  left: -10px;
+  top: -38px;
+
+  font-size:
+    clamp(
+      5.5rem,
+      8vw,
+      8.5rem
+    );
+
+  font-weight: 800;
+
+  line-height: 1;
+
+  letter-spacing: -.08em;
+
+  color:
+    rgba(255,255,255,.035);
+
+  pointer-events: none;
+}
+
+
+/* ==================================================
+   KICKER
+================================================== */
+
+.form-kicker {
+  position: relative;
+
+  z-index: 2;
+
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 9px;
+
+  padding:
+    9px
+    13px;
+
+  border:
+    1px solid
+    rgba(255,255,255,.1);
+
+  border-radius: 999px;
+
+  background:
+    rgba(255,255,255,.055);
+
+  backdrop-filter:
+    blur(14px);
+
+  color:
+    rgba(255,255,255,.66);
+
+  font-size: .7rem;
+
+  font-weight: 800;
+
+  letter-spacing: .09em;
+
+  text-transform: uppercase;
+}
+
+
+.form-kicker-dot {
+  position: relative;
+
+  width: 7px;
+  height: 7px;
+
+  border-radius: 50%;
+
+  background:
+    linear-gradient(
+      135deg,
+      #ff4f8b,
+      #ff7a30
+    );
+}
+
+
+.form-kicker-dot::after {
+  content: "";
+
+  position: absolute;
+
+  inset: -5px;
+
+  border:
+    1px solid
+    rgba(255,79,139,.24);
+
+  border-radius: 50%;
+
+  animation:
+    formDotPulse
+    2.6s
+    ease-out
+    infinite;
+}
+
+
+@keyframes formDotPulse {
+
+  0% {
+    transform: scale(.7);
+    opacity: 0;
+  }
+
+  30% {
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(1.5);
+    opacity: 0;
+  }
+
+}
+
+
+/* ==================================================
+   TITLE
+================================================== */
+
+.form-copy h2 {
+  margin: 0;
+
+  max-width: 540px;
+
+  color: #ffffff;
+
+  font-size:
+    clamp(
+      3.1rem,
+      4.9vw,
+      4.9rem
+    );
+
+  line-height: .97;
+
+  letter-spacing: -.067em;
+}
+
+
+.form-title-accent {
+  display: block;
+
+  background:
+    linear-gradient(
+      115deg,
+      #ff6e9e 0%,
+      #ff9a5f 100%
+    );
+
+  -webkit-background-clip: text;
+  background-clip: text;
+
+  color: transparent;
+}
+
+
+.form-description {
+  margin:
+    30px
+    0
+    0;
+
+  max-width: 470px;
+
+  color:
+    rgba(255,255,255,.62);
+
+  font-size: 1.03rem;
+
+  line-height: 1.75;
+}
+
+
+/* ==================================================
+   META
+================================================== */
+
+.form-meta {
+  margin-top: 38px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 17px;
+}
+
+
+.form-meta-item {
+  display: flex;
+
+  align-items: center;
+
+  gap: 14px;
+}
+
+
+.form-meta-icon {
+  width: 42px;
+  height: 42px;
+
+  flex: 0 0 auto;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border:
+    1px solid
+    rgba(255,255,255,.09);
+
+  border-radius: 14px;
+
+  background:
+    rgba(255,255,255,.055);
+
+  color: #ff82a7;
+}
+
+
+.form-meta-icon svg {
+  width: 20px;
+  height: 20px;
+}
+
+
+.form-meta-item strong {
+  display: block;
+
+  margin-bottom: 2px;
+
+  color:
+    rgba(255,255,255,.9);
+
+  font-size: .86rem;
+}
+
+
+.form-meta-item div > span {
+  display: block;
+
+  color:
+    rgba(255,255,255,.42);
+
+  font-size: .76rem;
+}
+
+
+/* ==================================================
+   FORM CARD
+================================================== */
+
+.form-card {
+  position: relative;
+
+  padding:
+    clamp(
+      32px,
+      4vw,
+      48px
+    );
+
+  border:
+    1px solid
+    rgba(255,255,255,.72);
+
+  border-radius: 32px;
+
+  background:
+    rgba(255,255,255,.97);
+
+  box-shadow:
+    0 40px 100px
+    rgba(0,0,0,.26);
+
+  overflow: hidden;
+}
+
+
+/* brilho interno */
+
+.form-card::before {
+  content: "";
+
+  position: absolute;
+
+  width: 280px;
+  height: 280px;
+
+  top: -190px;
+  right: -100px;
+
+  border-radius: 50%;
+
+  background:
+    radial-gradient(
+      circle,
+      rgba(255,79,139,.13),
+      transparent 68%
+    );
+
+  pointer-events: none;
+}
+
+
+/* ==================================================
+   FORM HEADER
+================================================== */
+
+.form-card-header {
+  position: relative;
+
+  z-index: 2;
+
+  margin-bottom: 34px;
+}
+
+
+.form-card-eyebrow {
+  display: inline-block;
+
+  margin-bottom: 11px;
+
+  color: #ff4f8b;
+
+  font-size: .66rem;
+
+  font-weight: 800;
+
+  letter-spacing: .1em;
+
+  text-transform: uppercase;
+}
+
+
+.form-card-header h3 {
+  margin: 0;
+
+  color: #191923;
+
+  font-size:
+    clamp(
+      1.6rem,
+      2.4vw,
+      2rem
+    );
+
+  line-height: 1.2;
+
+  letter-spacing: -.04em;
+}
+
+
+.form-card-header p {
+  margin:
+    10px
+    0
+    0;
+
+  max-width: 500px;
+
+  color: #686875;
+
+  font-size: .91rem;
+
+  line-height: 1.6;
+}
+
+
+/* ==================================================
+   LEAD FORM
+================================================== */
+
+.lead-form {
+  position: relative;
+
+  z-index: 2;
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(2, minmax(0, 1fr));
+
+  gap:
+    22px
+    18px;
+}
+
+
+/* ==================================================
+   FIELD
+================================================== */
+
+.form-field {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 8px;
+}
+
+
+.form-field label,
+.form-group legend {
+  color: #33333f;
+
+  font-size: .78rem;
+
+  font-weight: 800;
+}
+
+
+.form-field input,
+.form-field select {
+  width: 100%;
+
+  min-height: 52px;
+
+  padding:
+    0
+    15px;
+
+  border:
+    1px solid
+    rgba(25,25,35,.11);
+
+  border-radius: 14px;
+
+  outline: none;
+
+  background: #fafafa;
+
+  color: #252530;
+
+  font-size: .88rem;
+
+  transition:
+    border-color .22s ease,
+    background .22s ease,
+    box-shadow .22s ease;
+}
+
+
+.form-field input::placeholder {
+  color: #a2a2ac;
+}
+
+
+.form-field input:hover,
+.form-field select:hover {
+  border-color:
+    rgba(255,79,139,.22);
+}
+
+
+.form-field input:focus,
+.form-field select:focus {
+  border-color:
+    rgba(255,79,139,.5);
+
+  background: #ffffff;
+
+  box-shadow:
+    0 0 0 4px
+    rgba(255,79,139,.07);
+}
+
+
+/* ==================================================
+   SELECT
+================================================== */
+
+.select-wrap {
+  position: relative;
+}
+
+
+.select-wrap select {
+  appearance: none;
+
+  padding-right: 44px;
+}
+
+
+.select-icon {
+  position: absolute;
+
+  top: 50%;
+  right: 15px;
+
+  width: 18px;
+  height: 18px;
+
+  transform:
+    translateY(-50%);
+
+  pointer-events: none;
+
+  color: #858590;
+}
+
+
+.select-icon svg {
+  width: 100%;
+  height: 100%;
+}
+
+
+/* ==================================================
+   GROUP
+================================================== */
+
+.form-group {
+  grid-column:
+    1 / -1;
+
+  margin: 4px 0 0;
+
+  padding: 0;
+
+  border: 0;
+}
+
+
+.form-group legend {
+  margin-bottom: 12px;
+}
+
+
+/* ==================================================
+   TEAM SIZE
+================================================== */
+
+.choice-grid {
+  display: grid;
+
+  gap: 10px;
+}
+
+
+.choice-grid-3 {
+  grid-template-columns:
+    repeat(3, 1fr);
+}
+
+
+.choice-card,
+.choice-row {
+  position: relative;
+
+  cursor: pointer;
+}
+
+
+.choice-card input,
+.choice-row input {
+  position: absolute;
+
+  opacity: 0;
+
+  pointer-events: none;
+}
+
+
+.choice-card {
+  min-height: 60px;
+
+  padding:
+    15px
+    13px;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  border:
+    1px solid
+    rgba(25,25,35,.09);
+
+  border-radius: 14px;
+
+  background: #fafafa;
+
+  transition:
+    border-color .2s ease,
+    background .2s ease,
+    transform .2s ease;
+}
+
+
+.choice-card:hover {
+  transform:
+    translateY(-2px);
+
+  border-color:
+    rgba(255,79,139,.2);
+
+  background: #ffffff;
+}
+
+
+/* ==================================================
+   RADIO
+================================================== */
+
+.choice-radio {
+  position: relative;
+
+  width: 17px;
+  height: 17px;
+
+  flex: 0 0 auto;
+
+  border:
+    1.5px solid
+    #c4c4cc;
+
+  border-radius: 50%;
+
+  background: #ffffff;
+}
+
+
+.choice-radio::after {
+  content: "";
+
+  position: absolute;
+
+  inset: 3px;
+
+  border-radius: 50%;
+
+  background:
+    linear-gradient(
+      135deg,
+      #ff4f8b,
+      #ff7a30
+    );
+
+  transform:
+    scale(0);
+
+  transition:
+    transform .18s ease;
+}
+
+
+.choice-card input:checked
++ .choice-radio,
+
+.choice-row input:checked
++ .choice-radio {
+  border-color: #ff4f8b;
+}
+
+
+.choice-card input:checked
++ .choice-radio::after,
+
+.choice-row input:checked
++ .choice-radio::after {
+  transform:
+    scale(1);
+}
+
+
+.choice-card:has(input:checked) {
+  border-color:
+    rgba(255,79,139,.35);
+
+  background:
+    rgba(255,79,139,.035);
+}
+
+
+.choice-copy {
+  color: #464651;
+
+  font-size: .78rem;
+
+  font-weight: 650;
+
+  line-height: 1.4;
+}
+
+
+/* ==================================================
+   CHALLENGE OPTIONS
+================================================== */
+
+.challenge-options {
+  margin-top: 8px;
+}
+
+
+.choice-list {
+  display: grid;
+
+  grid-template-columns:
+    1fr
+    1fr;
+
+  gap:
+    9px
+    14px;
+}
+
+
+.choice-row {
+  min-height: 44px;
+
+  padding:
+    10px
+    12px;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  border:
+    1px solid
+    rgba(25,25,35,.075);
+
+  border-radius: 12px;
+
+  background:
+    rgba(250,250,250,.7);
+
+  transition:
+    border-color .2s ease,
+    background .2s ease;
+}
+
+
+.choice-row:hover {
+  border-color:
+    rgba(255,79,139,.18);
+
+  background: #ffffff;
+}
+
+
+.choice-row:has(input:checked) {
+  border-color:
+    rgba(255,79,139,.32);
+
+  background:
+    rgba(255,79,139,.03);
+}
+
+
+/* ==================================================
+   SUBMIT
+================================================== */
+
+.form-submit {
+  grid-column:
+    1 / -1;
+
+  width: 100%;
+
+  min-height: 58px;
+
+  margin-top: 8px;
+
+  padding:
+    17px
+    22px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 11px;
+
+  border: 0;
+
+  border-radius: 999px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #ff4f8b,
+      #ff7a30
+    );
+
+  box-shadow:
+    0 18px 40px
+    rgba(255,79,139,.23);
+
+  color: #ffffff;
+
+  font-size: .92rem;
+
+  font-weight: 800;
+
+  cursor: pointer;
+
+  transition:
+    transform .23s ease,
+    box-shadow .23s ease;
+}
+
+
+.form-submit svg {
+  width: 18px;
+  height: 18px;
+
+  transition:
+    transform .23s ease;
+}
+
+
+.form-submit:hover {
+  transform:
+    translateY(-2px);
+
+  box-shadow:
+    0 24px 50px
+    rgba(255,79,139,.31);
+}
+
+
+.form-submit:hover svg {
+  transform:
+    translateX(4px);
+}
+
+
+/* ==================================================
+   PRIVACY
+================================================== */
+
+.form-privacy {
+  grid-column:
+    1 / -1;
+
+  margin:
+    -4px
+    auto
+    0;
+
+  max-width: 520px;
+
+  display: flex;
+
+  align-items: flex-start;
+
+  justify-content: center;
+
+  gap: 8px;
+
+  color: #90909a;
+
+  font-size: .67rem;
+
+  line-height: 1.55;
+
+  text-align: left;
+}
+
+
+.form-privacy svg {
+  width: 14px;
+  height: 14px;
+
+  margin-top: 2px;
+
+  flex: 0 0 auto;
+}
+
+
+/* ==================================================
+   TABLET
+================================================== */
+
+@media (max-width: 1000px) {
+
+  .form-container {
+    grid-template-columns: 1fr;
+
+    gap: 54px;
+  }
+
+
+  .form-copy {
+    position: relative;
+
+    top: auto;
+
+    max-width: 720px;
+
+    padding-top: 0;
+  }
+
+
+  .form-description {
+    max-width: 620px;
+  }
+
+
+  .form-meta {
+    flex-direction: row;
+
+    flex-wrap: wrap;
+
+    gap:
+      18px
+      32px;
+  }
+
+}
+
+
+/* ==================================================
+   MOBILE
+================================================== */
+
+@media (max-width: 680px) {
+
+  .form-section {
+    padding:
+      72px
+      14px
+      82px;
+  }
+
+
+  .form-container {
+    gap: 44px;
+  }
+
+
+  .form-copy {
+    padding:
+      0
+      6px;
+  }
+
+
+  .form-heading-top {
+    min-height: 54px;
+
+    margin-bottom: 18px;
+  }
+
+
+  .form-section-index {
+    top: -27px;
+
+    font-size: 5.6rem;
+  }
+
+
+  .form-copy h2 {
+    font-size:
+      clamp(
+        2.75rem,
+        12vw,
+        3.7rem
+      );
+  }
+
+
+  .form-description {
+    font-size: 1rem;
+  }
+
+
+  .form-meta {
+    margin-top: 30px;
+
+    flex-direction: column;
+  }
+
+
+  .form-card {
+    padding:
+      28px
+      19px;
+
+    border-radius: 24px;
+  }
+
+
+  .lead-form {
+    grid-template-columns: 1fr;
+
+    gap: 19px;
+  }
+
+
+  .form-group,
+  .form-submit,
+  .form-privacy {
+    grid-column: 1;
+  }
+
+
+  .choice-grid-3 {
+    grid-template-columns: 1fr;
+  }
+
+
+  .choice-list {
+    grid-template-columns: 1fr;
+  }
+
+
+  .choice-card {
+    min-height: 52px;
+  }
+
+
+  .form-submit {
+    min-height: 56px;
+  }
+
+}
+
+
+/* ==================================================
+   REDUCED MOTION
+================================================== */
+
+@media (prefers-reduced-motion: reduce) {
+
+  .form-glow,
+  .form-kicker-dot::after {
+    animation: none;
+  }
+
+}
+
+</style>
