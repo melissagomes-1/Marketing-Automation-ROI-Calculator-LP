@@ -1301,5 +1301,1036 @@
     });
   </script>
 
-</body>
-</html>
+<!-- ==========================================
+     COMO FUNCIONA
+=========================================== -->
+
+<section class="how-section">
+
+  <div class="how-orb how-orb-1" aria-hidden="true"></div>
+  <div class="how-orb how-orb-2" aria-hidden="true"></div>
+
+  <div class="how-container">
+
+
+    <!-- ==========================================
+         ABERTURA DA SEÇÃO
+    =========================================== -->
+
+    <div class="how-heading reveal">
+
+      <div class="how-heading-top">
+
+        <span class="how-section-index" aria-hidden="true">
+          03
+        </span>
+
+        <span class="how-kicker">
+          <span class="how-kicker-dot"></span>
+          Como funciona
+        </span>
+
+      </div>
+
+
+      <h2>
+        Sua estimativa em
+
+        <span class="how-title-accent">
+          3 etapas
+        </span>
+      </h2>
+
+
+      <p>
+        Você informa alguns dados sobre a rotina atual da equipe
+        e a calculadora transforma essas informações em uma
+        estimativa prática de economia e oportunidades de automação.
+      </p>
+
+    </div>
+
+
+
+    <!-- ==========================================
+         ETAPAS
+    =========================================== -->
+
+    <div class="how-steps">
+
+
+      <!-- ETAPA 01 -->
+
+      <article class="how-step reveal">
+
+        <div class="step-marker">
+          <span>
+            01
+          </span>
+        </div>
+
+        <div class="step-content">
+
+          <span class="step-label">
+            Sua rotina
+          </span>
+
+          <h3>
+            Informe sua rotina atual
+          </h3>
+
+          <p>
+            Volume de campanhas, frequência de tarefas
+            e tempo gasto pela equipe.
+          </p>
+
+        </div>
+
+      </article>
+
+
+
+      <!-- ETAPA 02 -->
+
+      <article class="how-step reveal delay-1">
+
+        <div class="step-marker">
+          <span>
+            02
+          </span>
+        </div>
+
+        <div class="step-content">
+
+          <span class="step-label">
+            A estimativa
+          </span>
+
+          <h3>
+            Veja o potencial de economia
+          </h3>
+
+          <p>
+            A calculadora estima quanto esforço manual
+            pode ser reduzido.
+          </p>
+
+        </div>
+
+      </article>
+
+
+
+      <!-- ETAPA 03 -->
+
+      <article class="how-step reveal delay-2">
+
+        <div class="step-marker">
+          <span>
+            03
+          </span>
+        </div>
+
+        <div class="step-content">
+
+          <span class="step-label">
+            Próximos passos
+          </span>
+
+          <h3>
+            Identifique onde começar
+          </h3>
+
+          <p>
+            Receba recomendações para priorizar
+            oportunidades de automação.
+          </p>
+
+        </div>
+
+      </article>
+
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<style>
+
+/* ==================================================
+   COMO FUNCIONA
+================================================== */
+
+.how-section {
+  position: relative;
+
+  padding:
+    clamp(72px, 8vw, 102px)
+    24px
+    clamp(82px, 9vw, 112px);
+
+  background:
+    radial-gradient(
+      circle at 8% 18%,
+      rgba(255,79,139,.05),
+      transparent 24%
+    ),
+    radial-gradient(
+      circle at 92% 80%,
+      rgba(255,122,48,.045),
+      transparent 24%
+    ),
+    linear-gradient(
+      180deg,
+      #ffffff 0%,
+      #fffaf8 52%,
+      #ffffff 100%
+    );
+
+  overflow: hidden;
+}
+
+
+/* linha sutil no topo */
+
+.how-section::before {
+  content: "";
+
+  position: absolute;
+
+  top: 0;
+  left: 50%;
+
+  width:
+    min(
+      1180px,
+      calc(100% - 48px)
+    );
+
+  height: 1px;
+
+  transform:
+    translateX(-50%);
+
+  background:
+    linear-gradient(
+      90deg,
+      transparent,
+      rgba(25,25,35,.07),
+      transparent
+    );
+}
+
+
+/* ==================================================
+   ORBS
+================================================== */
+
+.how-orb {
+  position: absolute;
+
+  border-radius: 50%;
+
+  pointer-events: none;
+}
+
+
+.how-orb-1 {
+  width: 420px;
+  height: 420px;
+
+  left: -250px;
+  top: 20%;
+
+  background:
+    radial-gradient(
+      circle,
+      rgba(255,79,139,.075),
+      transparent 68%
+    );
+
+  animation:
+    howFloatLeft
+    9s
+    ease-in-out
+    infinite alternate;
+}
+
+
+.how-orb-2 {
+  width: 360px;
+  height: 360px;
+
+  right: -220px;
+  bottom: -120px;
+
+  background:
+    radial-gradient(
+      circle,
+      rgba(255,122,48,.07),
+      transparent 68%
+    );
+
+  animation:
+    howFloatRight
+    11s
+    ease-in-out
+    infinite alternate;
+}
+
+
+@keyframes howFloatLeft {
+
+  to {
+    transform:
+      translate(
+        28px,
+        -20px
+      );
+  }
+
+}
+
+
+@keyframes howFloatRight {
+
+  to {
+    transform:
+      translate(
+        -26px,
+        18px
+      );
+  }
+
+}
+
+
+/* ==================================================
+   CONTAINER
+================================================== */
+
+.how-container {
+  position: relative;
+
+  z-index: 2;
+
+  max-width: 1180px;
+
+  margin: 0 auto;
+
+  display: grid;
+
+  grid-template-columns:
+    minmax(0, .84fr)
+    minmax(480px, 1.16fr);
+
+  gap:
+    clamp(
+      66px,
+      8vw,
+      110px
+    );
+
+  align-items: start;
+}
+
+
+/* ==================================================
+   HEADING
+================================================== */
+
+.how-heading {
+  position: sticky;
+
+  top: 112px;
+
+  max-width: 535px;
+}
+
+
+/* topo do heading */
+
+.how-heading-top {
+  position: relative;
+
+  min-height: 64px;
+
+  margin-bottom: 22px;
+
+  display: flex;
+
+  align-items: center;
+}
+
+
+/* número de seção */
+
+.how-section-index {
+  position: absolute;
+
+  left: -10px;
+  top: -36px;
+
+  font-size:
+    clamp(
+      5.5rem,
+      8vw,
+      8.5rem
+    );
+
+  font-weight: 800;
+
+  line-height: 1;
+
+  letter-spacing: -.08em;
+
+  color:
+    rgba(25,25,35,.035);
+
+  pointer-events: none;
+}
+
+
+/* COMO FUNCIONA */
+
+.how-kicker {
+  position: relative;
+
+  z-index: 2;
+
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 9px;
+
+  padding:
+    9px
+    13px;
+
+  border:
+    1px solid
+    rgba(255,79,139,.12);
+
+  border-radius: 999px;
+
+  background:
+    rgba(255,255,255,.8);
+
+  box-shadow:
+    0 10px 26px
+    rgba(25,25,35,.045);
+
+  backdrop-filter:
+    blur(12px);
+
+  color: #555562;
+
+  font-size: .72rem;
+
+  font-weight: 800;
+
+  letter-spacing: .08em;
+
+  text-transform: uppercase;
+}
+
+
+.how-kicker-dot {
+  position: relative;
+
+  width: 7px;
+  height: 7px;
+
+  border-radius: 50%;
+
+  background:
+    linear-gradient(
+      135deg,
+      #ff4f8b,
+      #ff7a30
+    );
+}
+
+
+.how-kicker-dot::after {
+  content: "";
+
+  position: absolute;
+
+  inset: -5px;
+
+  border:
+    1px solid
+    rgba(255,79,139,.16);
+
+  border-radius: 50%;
+
+  animation:
+    howKickerPulse
+    2.6s
+    ease-out
+    infinite;
+}
+
+
+@keyframes howKickerPulse {
+
+  0% {
+    transform: scale(.7);
+    opacity: 0;
+  }
+
+  30% {
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(1.5);
+    opacity: 0;
+  }
+
+}
+
+
+/* ==================================================
+   TITLE
+================================================== */
+
+.how-heading h2 {
+  margin: 0;
+
+  max-width: 540px;
+
+  color: #191923;
+
+  font-size:
+    clamp(
+      3rem,
+      4.8vw,
+      4.8rem
+    );
+
+  line-height: .97;
+
+  letter-spacing: -.067em;
+}
+
+
+.how-title-accent {
+  position: relative;
+
+  display: inline-block;
+
+  margin-top: 3px;
+
+  background:
+    linear-gradient(
+      115deg,
+      #ff4f8b 0%,
+      #ff7a30 100%
+    );
+
+  -webkit-background-clip: text;
+  background-clip: text;
+
+  color: transparent;
+}
+
+
+/* underline do destaque */
+
+.how-title-accent::after {
+  content: "";
+
+  position: absolute;
+
+  left: 4px;
+  right: 0;
+  bottom: -8px;
+
+  height: 5px;
+
+  border-radius: 999px;
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(255,79,139,.18),
+      rgba(255,122,48,.06)
+    );
+
+  transform:
+    rotate(-1deg);
+}
+
+
+/* descrição */
+
+.how-heading > p {
+  margin:
+    31px
+    0
+    0;
+
+  max-width: 475px;
+
+  color: #5a5a68;
+
+  font-size: 1.02rem;
+
+  line-height: 1.72;
+}
+
+
+/* ==================================================
+   STEPS
+================================================== */
+
+.how-steps {
+  position: relative;
+
+  display: flex;
+
+  flex-direction: column;
+}
+
+
+/* linha vertical */
+
+.how-steps::before {
+  content: "";
+
+  position: absolute;
+
+  top: 32px;
+  bottom: 32px;
+
+  left: 30px;
+
+  width: 2px;
+
+  background:
+    linear-gradient(
+      180deg,
+      rgba(255,79,139,.12),
+      #ff4f8b 28%,
+      #ff7a30 72%,
+      rgba(255,122,48,.10)
+    );
+
+  border-radius: 999px;
+}
+
+
+/* luz percorrendo a linha */
+
+.how-steps::after {
+  content: "";
+
+  position: absolute;
+
+  left: 28px;
+  top: 36px;
+
+  width: 6px;
+  height: 42px;
+
+  border-radius: 999px;
+
+  background:
+    linear-gradient(
+      180deg,
+      rgba(255,255,255,0),
+      rgba(255,255,255,.95),
+      rgba(255,255,255,0)
+    );
+
+  box-shadow:
+    0 0 18px
+    rgba(255,79,139,.65);
+
+  animation:
+    stepLineMove
+    5.5s
+    ease-in-out
+    infinite;
+}
+
+
+@keyframes stepLineMove {
+
+  0% {
+    top: 5%;
+    opacity: 0;
+  }
+
+  15% {
+    opacity: 1;
+  }
+
+  85% {
+    opacity: 1;
+  }
+
+  100% {
+    top: 88%;
+    opacity: 0;
+  }
+
+}
+
+
+/* ==================================================
+   STEP
+================================================== */
+
+.how-step {
+  position: relative;
+
+  display: grid;
+
+  grid-template-columns:
+    62px
+    1fr;
+
+  gap: 28px;
+
+  padding:
+    14px
+    0
+    38px;
+}
+
+
+.how-step:last-child {
+  padding-bottom: 0;
+}
+
+
+/* ==================================================
+   MARKER
+================================================== */
+
+.step-marker {
+  position: relative;
+
+  z-index: 2;
+
+  width: 62px;
+  height: 62px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border:
+    1px solid
+    rgba(255,79,139,.13);
+
+  border-radius: 50%;
+
+  background:
+    rgba(255,255,255,.96);
+
+  box-shadow:
+    0 14px 34px
+    rgba(25,25,35,.08);
+
+  transition:
+    transform .3s ease,
+    box-shadow .3s ease,
+    border-color .3s ease;
+}
+
+
+.step-marker span {
+  font-size: .74rem;
+
+  font-weight: 800;
+
+  color: #ff4f8b;
+}
+
+
+.how-step:hover .step-marker {
+  transform:
+    scale(1.07);
+
+  border-color:
+    rgba(255,79,139,.25);
+
+  box-shadow:
+    0 18px 40px
+    rgba(255,79,139,.14);
+}
+
+
+/* ==================================================
+   STEP CONTENT
+================================================== */
+
+.step-content {
+  position: relative;
+
+  padding:
+    4px
+    0
+    34px;
+
+  border-bottom:
+    1px solid
+    rgba(25,25,35,.075);
+}
+
+
+.how-step:last-child .step-content {
+  border-bottom: 0;
+}
+
+
+.step-label {
+  display: inline-block;
+
+  margin-bottom: 9px;
+
+  color: #ff648f;
+
+  font-size: .68rem;
+
+  font-weight: 800;
+
+  letter-spacing: .11em;
+
+  text-transform: uppercase;
+}
+
+
+.step-content h3 {
+  margin: 0;
+
+  max-width: 500px;
+
+  color: #191923;
+
+  font-size:
+    clamp(
+      1.45rem,
+      2vw,
+      1.8rem
+    );
+
+  line-height: 1.2;
+
+  letter-spacing: -.035em;
+}
+
+
+.step-content p {
+  margin:
+    11px
+    0
+    0;
+
+  max-width: 480px;
+
+  color: #626270;
+
+  font-size: .96rem;
+
+  line-height: 1.65;
+}
+
+
+/* underline hover */
+
+.step-content::after {
+  content: "";
+
+  position: absolute;
+
+  left: 0;
+  bottom: -1px;
+
+  width: 0;
+  height: 1px;
+
+  background:
+    linear-gradient(
+      90deg,
+      #ff4f8b,
+      #ff7a30
+    );
+
+  transition:
+    width .4s
+    cubic-bezier(.2,.8,.2,1);
+}
+
+
+.how-step:hover .step-content::after {
+  width: 100%;
+}
+
+
+/* ==================================================
+   TABLET
+================================================== */
+
+@media (max-width: 1000px) {
+
+  .how-container {
+    grid-template-columns: 1fr;
+
+    gap: 52px;
+  }
+
+
+  .how-heading {
+    position: relative;
+
+    top: auto;
+
+    max-width: 720px;
+  }
+
+
+  .how-heading h2 {
+    max-width: 680px;
+  }
+
+
+  .how-heading > p {
+    max-width: 620px;
+  }
+
+
+  .how-steps {
+    max-width: 720px;
+  }
+
+}
+
+
+/* ==================================================
+   MOBILE
+================================================== */
+
+@media (max-width: 680px) {
+
+  .how-section {
+    padding:
+      68px
+      20px
+      82px;
+  }
+
+
+  .how-container {
+    gap: 42px;
+  }
+
+
+  .how-heading-top {
+    min-height: 54px;
+
+    margin-bottom: 18px;
+  }
+
+
+  .how-section-index {
+    top: -26px;
+
+    font-size: 5.6rem;
+  }
+
+
+  .how-kicker {
+    padding:
+      8px
+      11px;
+
+    font-size: .67rem;
+  }
+
+
+  .how-heading h2 {
+    font-size:
+      clamp(
+        2.7rem,
+        12vw,
+        3.6rem
+      );
+  }
+
+
+  .how-heading > p {
+    margin-top: 28px;
+
+    font-size: 1rem;
+  }
+
+
+  .how-step {
+    grid-template-columns:
+      52px
+      1fr;
+
+    gap: 18px;
+
+    padding-bottom: 30px;
+  }
+
+
+  .how-steps::before {
+    left: 25px;
+  }
+
+
+  .how-steps::after {
+    left: 23px;
+  }
+
+
+  .step-marker {
+    width: 52px;
+    height: 52px;
+  }
+
+
+  .step-content {
+    padding-bottom: 27px;
+  }
+
+
+  .step-content h3 {
+    font-size: 1.35rem;
+  }
+
+
+  .step-content p {
+    font-size: .93rem;
+  }
+
+}
+
+
+/* ==================================================
+   REDUCED MOTION
+================================================== */
+
+@media (prefers-reduced-motion: reduce) {
+
+  .how-orb,
+  .how-kicker-dot::after,
+  .how-steps::after {
+    animation: none;
+  }
+
+}
+
+</style>
